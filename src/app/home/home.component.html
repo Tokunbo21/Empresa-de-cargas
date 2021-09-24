@@ -1,0 +1,151 @@
+<!--Carrosel-->
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner formato">
+      <div class="carousel-item active">
+        <img class="d-block w-100 "
+          src="https://img.myloview.com.br/posters/peregrine-falcao-passaro-presa-sentando-arvore-tronco-abertos-asas-400-66293757.jpg"
+          alt="Primeiro Slide">
+      </div>
+  
+      <div class="carousel-item">
+        <img class="d-block w-100" src="https://www.4truck.com.br/blog/wp-content/uploads/2018/11/800x400-1.jpg"
+          alt="Segundo Slide">
+      </div>
+  
+      <div class="carousel-item">
+        <img class="d-block w-100"
+          src="https://www.revistacaminhoneiro.com.br/uploads/img/noticias/869/56bfb3a5ac4834844e42f802faa6a81d.jpg"
+          alt="Terceiro Slide">
+      </div>
+  
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Anterior</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Próximo</span>
+    </a>
+  </div>
+  <!--/Carrosel-->
+  <br>
+  <br>
+  <!--Card-->
+  <h2 id="veiculos">Nosso principais veiculos </h2>
+  <br>
+  <div class="card-deck">
+    <div class="card">
+      <img class="card-img-top" src="http://www.sindsegrs.com.br/wp-content/uploads/2018/02/01.-Carro-300x200.jpg"
+        alt="Imagem de capa do card">
+      <div class="card-body">
+        <h5 class="card-title">Carro</h5>
+        <p class="card-text">Este é um card mais longo com suporte a texto embaixo, que funciona como uma introdução a um
+          conteúdo adicional. Este conteúdo é um pouco maior.</p>
+        <p class="card-text"><small class="text-muted">Atualizados 3 minutos atrás</small></p>
+      </div>
+    </div>
+    <div class="card">
+      <img class="card-img-top" src="https://brasilalemanhanews.com.br/wp-content/uploads/2019/10/actro-300x200.jpg"
+        alt="Imagem de capa do card">
+      <div class="card-body">
+        <h5 class="card-title">Caminhão</h5>
+        <p class="card-text">Este é um card com suporte a texto embaixo, que funciona como uma introdução a um conteúdo
+          adicional.</p>
+        <p class="card-text"><small class="text-muted">Atualizados 3 minutos atrás</small></p>
+      </div>
+    </div>
+    <div class="card">
+      <img class="card-img-top"
+        src="https://s2.glbimg.com/jFVkoVYjFblg0IW-q-3Ds9TOvZD9VkGJVjVoxd-fFltIoz-HdGixxa_8qOZvMp3w/s.glbimg.com/jo/g1/f/original/2012/11/09/honda-xre300-1.jpg"
+        alt="Imagem de capa do card">
+      <div class="card-body">
+        <h5 class="card-title">Moto</h5>
+        <p class="card-text">Este é um card maior com suporte a texto embaixo, que funciona como uma introdução a um
+          conteúdo adicional. Este card tem o conteúdo ainda maior que o primeiro, para mostrar a altura igual, em ação.
+        </p>
+        <p class="card-text"><small class="text-muted">Atualizados 3 minutos atrás</small></p>
+      </div>
+    </div>
+  </div>
+  <!--/Card-->
+  
+  <!--Formulario codigo-->
+  <br>
+  <br>
+  <form class="container shadow p-3 mb-5 bg-white rounded  w-60" id="codigo">
+    <div class="form-group">
+      <h2 class="container">Rastreio</h2>
+      <label for="CodigoRastreio" class="font-weight-bold">Codigo do Rastreio</label>
+      <input name="produto" type="text" class="form-control w-50" id="CodigoRastreio" aria-describedby="rastreioHelp"
+        placeholder="Seu codigo" [(ngModel)]="codigo">
+      <small id="rastreioHelp" class="form-text text-muted">Saiba do status do seu produto.</small>
+    </div>
+    <button type="submit" class="btn btn-primary" (click)="getPedido()" >Enviar</button>
+  </form>
+  <br>
+  <!--/Formulario codigo-->
+  
+  <br>
+  <div class="container">
+  
+    <h2 id="sobre"> Sobre nós</h2>
+  
+    <p class="text-justify " style="font-size:20px">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque perspiciatis quas eum eligendi atque. Vero, labore
+      laborum, adipisci iusto dolorem eos, in quasi magni voluptatum accusamus quis magnam quas officiis!
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, impedit. Iste quas quod ex velit asperiores
+      error
+      perferendis dolores exercitationem aperiam iusto cupiditate itaque voluptas necessitatibus laborum dignissimos,
+      reprehenderit corrupti?
+    </p>
+  
+    <h2>Missão</h2>
+    <p class="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque deserunt repellat quas libero,
+      numquam laudantium
+      exercitationem fugiat minima error? Maxime veniam reprehenderit nulla labore repellat amet dolorum in voluptates
+      dignissimos?</p>
+    <h2>Visão</h2>
+    <p class="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur placeat rerum, eius error ipsum
+      optio
+      accusantium veritatis recusandae omnis consequuntur quasi architecto. Velit, minus! Soluta itaque suscipit eos minus
+      molestias?</p>
+    <h2>Valor</h2>
+    <p class="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet iusto magnam magni, cupiditate
+      mollitia optio
+      doloremque ratione modi. Iure ipsum in blanditiis, veritatis quam hic aut ducimus atque quo nam.</p>
+  </div>
+  
+  <!--Card2-->
+  <h2>Fale conosco</h2>
+  <br>
+  <div class="card-deck" id="contato">
+    <div class="card">
+      <img class="card-img-top w-50 container"
+        src="https://i.pinimg.com/236x/e7/3c/49/e73c498712435ec20988d69716d59425.jpg" alt="Imagem de capa do card">
+      <div class="card-body">
+        <h5 class="card-title">Empresa</h5>
+        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, laudantium suscipit? Rerum,
+          fugit nisi aperi. número: 5555-5555 email: aaaa@aaa</p>
+      </div>
+      <div class="card-footer">
+      </div>
+    </div>
+    <div class="card">
+      <img class="card-img-top w-80 container"
+        src="https://www.trisul-sa.com.br/blog/wp-content/uploads/2017/03/vila-mariana-maps-060317.jpg">
+      <div class="card-body">
+        <h5 class="card-title">Nossa sedes</h5>
+        <p class="card-text">Este é um card com suporte a texto embaixo, que funciona como uma introdução a um conteúdo
+          adicional.</p>
+      </div>
+      <div class="card-footer">
+      </div>
+    </div>
+  </div>
+  <!--/Card2-->
