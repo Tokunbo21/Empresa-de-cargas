@@ -1,5 +1,6 @@
 import { Component, Injectable, OnInit } from '@angular/core';
 import { Pedido } from '../model/Pedido';
+import { RastreioService } from '../service/rastreio.service';
 
 @Component({
   selector: 'app-rastreio',
@@ -10,16 +11,16 @@ import { Pedido } from '../model/Pedido';
   providedIn: 'root'
 })
 export class RastreioComponent implements OnInit {
-pedido :Pedido = new Pedido()
+  pedido: Pedido = new Pedido()
 
-  constructor() { }
+  constructor(
+    private rasteioServe: RastreioService
+  ) { }
 
   ngOnInit(): void {
+      
+   this.pedido = this.rasteioServe.getPedido() 
     
   }
 
-  setPedido(pedido:Pedido){
-    this.pedido=pedido
-    console.log(this.pedido)
-  }
 }

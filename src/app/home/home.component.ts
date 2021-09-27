@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { Pedido } from '../model/Pedido';
-import { RastreioComponent } from '../rastreio/rastreio.component';
 import { PedidoService } from '../service/pedido.service';
+import { RastreioService } from '../service/rastreio.service';
 
 @Component({
   selector: 'app-home',
@@ -15,7 +15,7 @@ export class HomeComponent implements OnInit {
   pedido : Pedido = new Pedido
   constructor(
     private pedidoService: PedidoService,
-    private rastreioComponet: RastreioComponent,
+    private rastreioService: RastreioService,
     private route: Router
   ) { }
 
@@ -25,7 +25,7 @@ export class HomeComponent implements OnInit {
   getPedido() {
     this.pedidoService.findPedidoByCodigo(this.codigo).subscribe((resp:Pedido)=>{
       this.pedido= resp
-      this.rastreioComponet.setPedido(this.pedido)
+      this.rastreioService.setPedido(this.pedido)
       this.route.navigate(['/rastreio'])
     })
   }
